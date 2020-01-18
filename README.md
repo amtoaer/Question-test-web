@@ -1,7 +1,5 @@
 # 马原、毛概刷题工具（web version）
-> 目前并未完成，只是先占个坑！
-
-马原、毛概刷题工具的web版本（该项目为任务驱动型，本人对`html/css/js/go`使用并不熟练）
+马原、毛概刷题工具的web版本
 
 ## 组成
 
@@ -12,6 +10,8 @@
 3. `muse-ui`: 基于`vue2.0`的Material Design UI 组件库
 
 ## 使用
+
+> **注意：自行部署需要把`./front-end/src/components/question.vue`中请求的地址修改为自己的后端地址。**
 
 下载该项目：
 
@@ -34,4 +34,5 @@ git clone https://github.com/jeasonlau/Question-test-web.git
   npm run build
   ```
 
-  将`dist`文件夹下的内容部署到web服务器上
+  将`dist`文件夹下的内容放到web服务器上
+

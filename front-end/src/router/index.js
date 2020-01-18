@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '../components/index'
 import temp from '../components/temp'
+import exam from '../components/exam'
 import order from '../components/order'
-import other from '../components/other'
+import about from '../components/about'
 
 Vue.use(Router)
 
@@ -35,24 +36,19 @@ export default new Router({
       component: order
     },
     {
-      path: '/马原/随机刷题',
-      name: 'mayuanrandom',
-      component: other
-    },
-    {
-      path: '/毛概/随机刷题',
-      name: 'maogairandom',
-      component: other
-    },
-    {
       path: '/马原/考试模拟',
       name: 'mayuanexam',
-      component: other
+      component: exam
     },
     {
       path: '/毛概/考试模拟',
       name: 'maogaiexam',
-      component: other
+      component: exam
+    },
+    {
+      path: '/关于',
+      name: 'about',
+      component: about
     }
   ]
 })

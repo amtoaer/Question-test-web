@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	mayuan, _ := ioutil.ReadFile("./mayuan.json")
 	maogai, _ := ioutil.ReadFile("./maogai.json")
 	var mayuanQuestionList []map[string]interface{}
@@ -17,7 +18,8 @@ func main() {
 	json.Unmarshal(mayuan, &mayuanQuestionList)
 	json.Unmarshal(maogai, &maogaiQuestionList)
 	router := gin.Default()
-	router.GET("/:subject/position/:num", func(c *gin.Context) { //按位置返回
+	router.GET("/api/:subject/position/:num", func(c *gin.Context) { //按位置返回
+		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 		var questionList []map[string]interface{}
 		subject := c.Param("subject")
 		if subject == "mayuan" {
@@ -38,7 +40,8 @@ func main() {
 			c.JSON(404, "out of range!")
 		}
 	})
-	router.GET("/:subject/random/*type", func(c *gin.Context) { //随机返回
+	router.GET("/api/:subject/random/*type", func(c *gin.Context) { //随机返回
+		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 		var questionList []map[string]interface{}
 		subject := c.Param("subject")
 		if subject == "mayuan" {
@@ -73,5 +76,5 @@ func main() {
 			}
 		}
 	})
-	router.Run(":10000")
+	router.Run(":8080")
 }

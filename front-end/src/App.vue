@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <mu-row class="set">
-      <mu-appbar style="width: 100%;" color="primary">
+      <mu-appbar style="width: 100%;" color="red">
         <mu-button icon slot="left" @click="ifOpen=!ifOpen">
           <mu-icon value="menu"/>
         </mu-button>
@@ -11,14 +11,22 @@
     <mu-drawer :open.sync="ifOpen" :docked=false :right=false>
       <mu-list>
         <mu-list-item button to="/" @click="ifOpen=!ifOpen">
+          <mu-icon value="home"></mu-icon>
           <mu-list-item-title>主页</mu-list-item-title>
         </mu-list-item>
         <mu-divider></mu-divider>
         <mu-list-item button to="/马原" @click="ifOpen=!ifOpen">
-          <mu-list-item-title>马克思主义基本原理概论</mu-list-item-title>
+          <mu-icon value="book"></mu-icon>
+          <mu-list-item-title>马原</mu-list-item-title>
         </mu-list-item>
         <mu-list-item button to="/毛概" @click="ifOpen=!ifOpen">
-          <mu-list-item-title>毛泽东思想与中国特色社会主义概论</mu-list-item-title>
+          <mu-icon value="book"></mu-icon>
+          <mu-list-item-title>毛概</mu-list-item-title>
+        </mu-list-item>
+        <mu-divider></mu-divider>
+        <mu-list-item button to="/关于" @click="ifOpen=!ifOpen">
+          <mu-icon value="info"></mu-icon>
+          <mu-list-item-title>关于</mu-list-item-title>
         </mu-list-item>
       </mu-list>
     </mu-drawer>
