@@ -15,7 +15,7 @@
     <mu-paper :z-depth="4">
       <h1 align="center">- 马原、毛概刷题工具 -</h1>
       <p class="article" align="left">
-        欢迎使用！该网站提供马原、毛概的顺序刷题与考试模拟功能。其中马原题目<span style="color: #4caf50">1329</span>道
+        欢迎使用！该网站提供马原、毛概的顺序刷题与考试模拟功能。题库中有马原题目<span style="color: #4caf50">1329</span>道
         ，毛概题目<span style="color: #4caf50">1449</span>道，可以满足大部分学生的练习需要。</p>
       <p class="article" align="left">
         如果有问题或者建议，欢迎反馈到我的邮箱<a href="mailto:b1361974998@gmail.com">b1361974998@gmail.com</a>
@@ -32,7 +32,7 @@
     </mu-paper>
     <mu-flex justify-content="center" style="margin-top: 10px;">
       <mu-footer class="footer">Designed by <a href="https://github.com/jeasonlau/">JeasonLau</a><br/>
-        Powered by <a href="https://cn.vuejs.org/">vue.js</a></mu-footer>
+        Powered by <a href="https://cn.vuejs.org/">Vue.js</a></mu-footer>
     </mu-flex>
   </mu-container>
 </template>

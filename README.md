@@ -34,5 +34,13 @@ git clone https://github.com/jeasonlau/Question-test-web.git
   npm run build
   ```
 
-  将`dist`文件夹下的内容放到web服务器上
+  将`dist`文件夹下的内容放到web服务器上。
 
+## api
+
+| 请求                                  | 返回                                  |
+| ------------------------------------- | ------------------------------------- |
+| /api/(mayuan\|maogai)/position/(num)  | (mayuan\|maogai)题库中索引为num的题目 |
+| /api/(mayuan\|maogai)/random/         | (mayuan\|maogai)题库中的随机一道题目  |
+| /api/(mayuan\|maogai)/random/radio    | (mayuan\|maogai)题库中随机一道单选题  |
+| /api/(mayuan\|maogai)/random/checkbox | (mayuan\|maogai)题库中随机一道多选题  |

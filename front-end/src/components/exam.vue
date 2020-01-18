@@ -13,7 +13,7 @@
     </mu-paper>
     <mu-flex justify-content="center" style="margin-top: 10px;">
       <mu-footer class="footer">Designed by <a href="https://github.com/jeasonlau/">JeasonLau</a><br/>
-        Powered by <a href="https://cn.vuejs.org/">vue.js</a></mu-footer>
+        Powered by <a href="https://cn.vuejs.org/">Vue.js</a></mu-footer>
     </mu-flex>
   </mu-container>
 </template>
