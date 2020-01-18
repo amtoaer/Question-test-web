@@ -10,7 +10,7 @@
   <mu-container>
     <mu-paper class="demo-paper" :z-depth="4">
       <div>
-        <question v-for="i in 10" v-bind:num="(current-1)*10+i" v-bind:type="type"></question>
+        <question v-for="i in 10" v-if="(current-1)*10+i<=total" v-bind:num="(current-1)*10+i" v-bind:type="type"></question>
       </div>
     </mu-paper>
     <mu-flex justify-content="center" style="margin-top: 20px;">
@@ -40,7 +40,7 @@
       return {
         type: this.$route.path,
         current:1,
-        total:1000
+        total:1000,
       }
     }
   }
