@@ -1,38 +1,19 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
+title: '问题反馈 [BUG]'
+labels: ['bug','help wanted']
 assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+> 修改以下`斜体`内容:
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+1. 你遇到的问题
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+   *描述问题(题目错误请填写题目描述)*
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+2. 复现过程/错误原因
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+   *题目错误填写错误原因(如答案错误/选项文字错误)*
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+   *其它错误请写明复现过程*
