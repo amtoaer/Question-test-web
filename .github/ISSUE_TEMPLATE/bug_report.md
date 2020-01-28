@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: '问题反馈 [BUG]'
-labels: ['bug','help wanted']
+labels: 'bug'
 assignees: ''
 ---
 
