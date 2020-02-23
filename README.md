@@ -35,3 +35,9 @@ git clone https://github.com/jeasonlau/Question-test-web.git
   ```
 
   将`dist`文件夹下的内容放到web服务器上。
+
+## 已知BUG
+
+1. 由于部分题目题干/选项过长，导致文字重叠。（目前还没有找到更合适的容纳题目的组件，就先不修复了）
+
+   > 临时解决办法：使用大屏幕设备，如：电脑。
